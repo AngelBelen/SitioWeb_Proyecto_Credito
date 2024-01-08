@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f3f3f3;
+	font-family: 'poppins';
+    font-weight: 700;
+}
+
+.menu{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ background-color: blue;
+ text-align: center;
+ align-items: center;
+ 
+}
+.menu-enlaces{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-color: black;
+}
+.menu-enlaces a{
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   font-size: 25px;
+}
+.menu-enlaces a:hover{
+    color: yellow;
+    background-color: black;
+}
+.logo img {
+    margin: 25px;
+    width: 230px;
+    height: 130px;
+}
+#imgcab{
+    width: 100%;
+}
+
+
+.sub-menu {
+    list-style: none;
+    text-align: left;
+}
+.menu li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;  
+}
+.sub-menu > li {
+    float: left; 
+}
+.menu li a:hover {
+    background-color: black;
+    color: yellow;
+}
+.sub-menu li ul {
+    display: none; 
+    position: absolute; 
+    list-style: none; 
+    background-color: blue;
+}
+.menu li:hover > ul {
+    display: block; 
+}
+
+
+.date {
+    margin: 30px;
+    display: flex;
+}
+#pf {
+    width: 49%;
+	height: 30px;
+    padding-top: 1%;
+	padding-left: 1%;
+	background-color: blue;
+	border-radius: 10px;
+	color:white;
+}
+#ph {
+    width: 49%;
+	height: 30px;
+    padding-top: 1%;
+	padding-left: 1%;
+    margin-left: 2%;
+	background-color: blue;
+	border-radius: 10px;
+	color:white;
+}
+
+.contacto{
+    margin: 30px;
+}
+.contacto h1{
+    font-size: 70px;
+    margin: 40px;
+}
+.contacto h2{
+    margin: 20px;
+}
+.contacto div{
+    display: flex;
+}
+.contacto ol {
+    margin-left: 45px;
+    width: 49%;
+}
+.contacto ol li {
+    margin-top: 20px;
+}
+.contacto div ol ul {
+    margin-left: 30px;
+}
+
+.parrafo {
+    margin: 20px;
+}
+.parrafo h2 {
+    margin: 20px;
+}
+.parrafo p {
+    margin-left: 40px;
+}
+.parrafo div{
+    display: flex;
+}
+.parrafo ol {
+    margin-left: 45px;
+    width: 49%;
+}
+.parrafo ol li {
+    margin-top: 20px;
+}
+.parrafo div ol ul {
+    margin-left: 30px;
+}
+
+.atencion{
+    margin: 40px;
+}
+
+.blok {
+    margin-left: 2px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.formulario{
+    margin: 40px;
+}
+
+.solicitud{
+    margin: 20px;
+    
+}
+.solicitud legend{
+    font-size: 30px;
+    color: darkblue;
+}
+.solicitud span{
+    font-size: 16px;
+    color: gray;
+}
+
+.nombres {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.nombres input {
+    margin-left: 112px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.apellidos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.apellidos input {
+    margin-left: 114px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.dni {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.dni input {
+    margin-left: 158px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.telefono {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.telefono select {
+    margin-left: 54px;
+    font-family: 'poppins';
+}
+
+.numero{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.numero input {
+    margin-left: 121px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.correo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.correo input {
+    margin-left: 36.5px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.direccion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.direccion input {
+    margin-left: 110px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.provincia {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.provincia select {
+    margin-left: 113px;
+    font-family: 'poppins';
+}
+
+.distrito{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.distrito input {
+    margin-left: 131px;
+    font-family: 'poppins';
+    width: 25%;
+}
+
+.motivo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.motivo select {
+    margin-left: 133px;
+    font-family: 'poppins';
+}
+
+.servicio{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.servicio select {
+    margin-left: 125px;
+    font-family: 'poppins';
+}
+
+.inquietudes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.inquietudes textarea {
+    margin-left: 40px;
+    font-family: 'poppins';
+    width: 90%;
+    height: 200px;
+}
+
+.boton {
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+input[type="submit"]{
+    height: 30px;
+    width: 20%;
+    border: none;
+    background-color: blue;
+    border-radius: 5px;
+    font-family: 'poppins';
+    color: white;
+}
+input[type="submit"]:hover{
+    background: black;
+    cursor:pointer;
+    color: yellow;
+}
+
+footer{
+
+    background-color: blue;
+}
+h3{
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+.imgfoot {
+    display: flex;
+    margin-left: 38%;
+}
+.imgfoot img {
+    width: 7%;
+    padding-left: 2%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.imgfoot img:hover {
+    transform: scale(1.2);
+}

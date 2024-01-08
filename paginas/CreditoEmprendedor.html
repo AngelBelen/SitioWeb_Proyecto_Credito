@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crédito Emprendedor</title>
+        <link rel="stylesheet" href="../css/CreditoEmprendedor.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <a href="../paginas/CreditoSeguro.html" target="_parent">
+                    <img src="../imagenes/Logo.png" alt="Imagen no encontrada"></a>
+                </div>
+                <div class="menu-enlaces">
+                    <a href="../paginas/Inicio.html">Inicio</a>
+                    <ul class="sub-menu">
+                        <li><a href="../paginas/Productos.html">Productos</a>
+                            <ul>
+                                <li><a href="../paginas/CreditoPersonal.html">Crédito Personal con Garantía</a></li>
+                                <li><a href="../paginas/CreditoAgropecuario.html">Crédito Agropecuario</a></li>
+                                <li><a href="../paginas/CreditoPYME.html">Crédito PYME</a></li>
+                                <li><a href="../paginas/CreditoEmprendedor.html">Crédito Emprendedor</a></li>
+                                <li><a href="../paginas/CreditoUniversitario.html">Crédito Universitario</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="../paginas/Contacto.html">Contacto</a>
+                    <a href="../paginas/Noticias.html">Noticias</a>
+                </div>  
+            </div>
+        </header>
+        <main>
+            <div class="parrafo">
+                <h1 id="titulo">Crédito Emprendedor</h1>
+                <p>
+                    Financiamiento para compra de inventarios, bienes, servicios u otros que ayude a mejorar la actividad del negocio.
+                </p>
+                <p>
+                    Dirigido a personas naturales que requieren comenzar un negocio, que son utilizadas para una actividad productiva y demás bienes.
+                </p>
+            </div>
+            <h2>Características</h2>
+            <div class="parte1">
+                <div>
+                    <ol>
+                        <li>Te prestamos:</li>
+                        <ul>
+                            <li>MN: Min. S/. 3000.00 – Max. S/. 300,000.00</li>
+                        </ul>
+                        <li>La tasa de interés es del 7%</li>
+                        <li>El plazo mínimo de 12 cuotas.</li>
+                        <li>El plazo máximo del desembolso se fija en:</li>
+                        <ul>
+                            <li>Para capital de trabajo hasta 72 meses.</li>
+                        </ul>
+                        <li>Pago de la primera cuota hasta 90 días.</li>
+                        <ul>
+                            <li>Para capital de trabajo hasta 72 meses.</li>
+                        </ul>
+                        <li>El importe Máximo puede ser superior de acuerdo 
+                            a la evaluación del cliente, teniendo el tope máximo el límite legal.
+                        </li>
+                    </ol>
+                    <video controls autoplay muted class="videoEmprendedor">
+                        <source src="../videos/videoInicioEmprendedor.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <h2>Requisitos</h2>
+            <div class="parte2">
+                <ol>
+                    <li>Las condiciones mínimas para solicitar el crédito son las siguientes:</li>
+                    <ul>
+                        <li>No tener deudas morosas en el sistema financiero.</li>
+                    </ul>
+                    <li>Proporcionar la siguiente documentación:</li>
+                    <ul>
+                        <li>Documentos del negocio (Licencia de funcionamiento, RUC, Boletas de compra de mercadería 
+                            del último mes, cuaderno de ventas u otros).
+                        </li>
+                        <li>Recibo último de servicios cancelados (agua, luz o teléfono fijo).</li>
+                        <li>Garantías (de acuerdo a evaluación).</li>
+                    </ul>
+                </ol>
+            </div>
+            <h2>Solicitud</h2>
+            <form action="formulario">
+                <div class="monto" for="monto">
+                    <h4>Monto a solicitar:</h4>
+                    <input name="monto" type="number" placeholder="De 3000.00 a 300,000.00" required id="monto">
+                    <h4>soles</h4>
+                </div>
+                <div class="cuota" for="cuota">
+                    <h4>Número de cuotas:</h4>
+                    <input name="cuota" type="number" placeholder="De 12 a 72" required id="tiempo">
+                    <h4>meses</h4>
+                </div>
+                <div class="interes" for="interes">
+                    <h4>Tasa de interés:</h4>
+                    <input type="text" placeholder="7" id="interes" readonly>
+                    <h4>%</h4>
+                </div>
+            </form>
+            <button class="boton" id="btnCalcular">Calcular</button>
+            <h2>Resultado</h2>
+            <div class="calculo1"><!--readonly no permite modiifcar en un input-->
+                <h4>Calculo de la cuota :</h4>
+                <p  id="resultadoCuota"></p>
+            </div>
+            <div class="calculo2">
+                <h4>Total a pagar :</h4>
+                <p id="totalPagar"></p>
+            </div>
+            <h2>Cronograma de pagos</h2>
+            <div>
+                <h4 class="parrafopagos">Tabla de fechas  y cuotas a pagar de la solicitud realizada</h4>
+                <div class="col-6">
+                    <table id="lista-tabla" class="table" border="1">
+                        <thead>
+                            <tr>
+                                <td>Nro.</td>
+                                <td>Cuota</td>
+                                <td>Capital</td>
+                                <td>Interés</td>
+                                <td>Saldo</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tab"></tbody>
+                        <tr>
+                            <td class="ft">Total</td>
+                            <td id="t1"></td>
+                            <td id="t2"></td>
+                            <td id="t3"></td>
+                            <td id="t4"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <h3>Síguenos en nuestra redes sociales:</h3>
+            <div class="parte3">
+                <img src="../imagenes/icono whatsapp.png" alt="Imagen no encontrada">
+                <img src="../imagenes/icono facebook.png" alt="Imagen no encontrada">
+                <img src="../imagenes/icono twitter.png" alt="Imagen no enonctrada">
+                <img src="../imagenes/icono email.png" alt="Imagen no encontrada">
+            </div>
+        </footer>
+    </body>
+    
+</html>
+<script src="../JavaScript/CreditoEmprendedor.js"></script>
+<script src="../JavaScript/moment.js"></script>

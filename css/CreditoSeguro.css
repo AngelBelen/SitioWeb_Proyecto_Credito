@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f3f3f3;
+	font-family: 'poppins';
+    font-weight: 700;
+}
+
+/*MENU DE TODOS LOS ELEMENTOS*/
+.menu{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ background-color: blue;
+ text-align: center;
+ align-items: center;
+ 
+}
+.menu-enlaces{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-color: black;
+}
+.menu-enlaces a{
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   font-size: 25px;
+}
+.menu-enlaces a:hover{
+    color: yellow;
+    background-color: black;
+}
+.logo img {
+    margin: 25px;
+    width: 230px;
+    height: 130px;
+}
+#imgcab{
+    width: 100%;
+}
+
+/*SUB-MENU PRODUCTOS*/
+.sub-menu {
+    list-style: none;
+    text-align: left;
+}
+.menu li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;  
+}
+.sub-menu > li {
+    float: left; 
+}
+.menu li a:hover {
+    background-color: black;
+    color: yellow;
+}
+.sub-menu li ul {
+    display: none; 
+    position: absolute; 
+    list-style: none; 
+    background-color: blue;
+}
+.menu li:hover > ul {
+    display: block; 
+}
+/*FOOTER*/
+footer{
+    background-color: blue;
+}
+h3{
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+.parte3 {
+    display: flex;
+    margin-left: 38%;
+}
+.parte3 img {
+    width: 7%;
+    padding-left: 2%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.parte3 img:hover {
+    transform: scale(1.2);
+}
+
+#divcab{
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+}
+#imgcab{
+	width: 100%;
+	height: 400px;
+	float: left;
+	margin:0;
+}
+#izq,#der{
+	position: absolute;
+	width: 25px;
+	height: 40px;
+	left:0px;
+	top:110px;
+	z-index: 999;
+}
+#h1cab{
+	text-align: center;
+	color:rgb(6, 6, 6);
+}
+.h2cab {
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+.h3cab {
+	text-align: center;
+	color: rgb(0, 0, 0);
+}
+.blok{
+	width: 22%;
+	min-height: 200px;
+	height: auto;
+	border:1px solid;
+	float: left;
+	margin:1%;
+	color: gray;
+}
+
+.imgblok{
+	width:98%;
+	height:250px;
+	margin:3px 1% 3px 1%;
+	float:left;
+}
+
+.pblok{
+	text-align:justify;
+	font-size:16px;
+	margin-left:2px;
+	visibility:hidden;
+	height:0px;
+}
+#imgpie{
+	width: 100%;
+	height: 70px;
+	float: left;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+#ventana{
+	position: absolute;
+	border-radius: 10px;
+	background-color: gray;
+	top:0px;
+	left: 0px;
+	width: 0px;
+	height: 0px;
+}
+
+#imgventana{
+	border-radius: 10px;
+	top:0px;
+	left: 0px;
+	width: 0px;
+	height: 0px;
+}
+section{
+	display: flex;
+}
+.escuela{
+	margin-left: 20%;
+}

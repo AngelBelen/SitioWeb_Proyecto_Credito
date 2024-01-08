@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f3f3f3;
+	font-family: 'poppins';
+    font-weight: 700;
+}
+
+/*MENU DE TODOS LOS ELEMENTOS*/
+.menu{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ background-color: blue;
+ text-align: center;
+ align-items: center;
+ 
+}
+.menu-enlaces{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-color: black;
+}
+.menu-enlaces a{
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   font-size: 25px;
+}
+.menu-enlaces a:hover{
+    color: yellow;
+    background-color: black;
+}
+.logo img {
+    margin: 25px;
+    width: 230px;
+    height: 130px;
+}
+#imgcab{
+    width: 100%;
+}
+
+/*SUB-MENU PRODUCTOS*/
+.sub-menu {
+    list-style: none;
+    text-align: left;
+}
+.menu li a {
+    color: white;
+    padding: 10px 20px;/* Altura, Ancho */
+    display: block;  /* Hace que todo el conjunto de bloque se vuelva uno solo, porque
+    todos loss elemntos tenian displey line osea en linea */
+}
+.sub-menu > li {
+    float: left; /* Hace que los elementos de menu floten a la derecha(origen) ya que
+    estaba en una posición en bloque, es decir todo en na misma fila. */
+}
+.menu li a:hover {
+    background-color: black;
+    color: yellow;
+}
+.sub-menu li ul {
+    display: none; /* Para que desaparezcan los subtemas */
+    position: absolute; /* Para que los subtemas se puedan acomodar al elemento del menu
+    donde se desglozan */
+    list-style: none; /*Sino no coloco aparecerán los puntos de la etiqueta ul*/
+    background-color: blue;
+}
+.menu li:hover > ul {
+    display: block; /* Para que cuando pase el cursor del mouse, se pueda visualizar 
+    cada subtema */ 
+}
+
+/*FOOTER*/
+footer{
+    background-color: blue;
+}
+h3{
+    color: blue;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+
+.parte3 {
+    display: flex;
+    margin-left: 38%;
+}
+.parte3 img {
+    width: 7%;
+    padding-left: 2%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.parte3 img:hover {
+    transform: scale(1.2);
+}
+
+/*PARRAFO INCIAL*/
+.parrafo {
+    margin: 30px;
+}
+.parrafo ul li{
+    margin-left: 30px;
+
+}
+
+/*PRIMER PARTE*/
+h2 {
+    margin-left: 30px;
+}
+.parte1 div{
+    display: flex;
+}
+.parte1 ol {
+    margin-left: 45px;
+    width: 49%;
+}
+.parte1 ol li {
+    margin-top: 20px;
+}
+.parte1 div ol ul {
+    margin-left: 30px;
+}
+.parte1 
+/*VIDEO*/
+.videoEmprendedor {
+    width: 49%;
+    margin-right: 2%;
+    height: 500px;
+    margin-top: 30px;
+}
+/*PARTE 2*/
+.parte2 {
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+.parte2 ol li {
+    margin-top: 20px;
+}
+.parte2 ol ul{
+    margin-left: 30px;
+}
+/*MONTO*/
+.monto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+.monto input {
+    margin-left: 38px;
+    font-family: 'poppins';
+    width: 13%;
+}
+.monto h4 {
+    margin-left: 10px;
+}
+
+/*CUOTA*/
+.cuota {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+.cuota input {
+    margin-left: 20px;
+    font-family: 'poppins';
+    width: 13%;
+}
+.cuota h4 {
+    margin-left: 10px;
+}
+
+/*INTERES*/
+.interes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+.interes input {
+    margin-left: 48px;
+    width: 13%;
+}
+.interes h4 {
+    margin-left: 10px;
+}
+/*BOTON*/
+.boton {
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+.boton{
+    height: 30px;
+    width: 13%;
+    border: none;
+    background-color: blue;
+    border-radius: 5px;
+    font-family: 'poppins';
+    color: white;
+}
+.boton:hover{
+    background: black;
+    cursor:pointer;
+    color: yellow;
+}
+
+/*CALCULO*/
+.calculo1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+.calculo1 p {
+    margin-left: 12px;
+    width: 13%;
+    font-family: 'poppins';
+}
+.calculo1 h4 {
+    margin-left: 10px;
+}
+.calculo2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+}
+.calculo2 p {
+    margin-left: 61px;
+    width: 13%;
+    font-family: 'poppins';
+}
+.calculo2 h4 {
+    margin-left: 10px;
+}
+.parrafopagos {
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.table {
+    margin-top: 20px;
+    margin-left: 220px;
+    margin-bottom: 30px;
+    color: white;
+}
+.table thead tr td {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+.table tr td{
+    padding: 20px;
+    text-align: center;
+    background-color: blue
+}
